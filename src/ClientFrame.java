@@ -33,12 +33,10 @@ public class ClientFrame extends JFrame {
 				
 		JTextField jtfIP = new JTextField();
 		jtfIP.setBounds(120, 15, 120, 25);
-		jtfIP.setFont(new Font("標楷體", Font.PLAIN, 20));
 		contentPane.add(jtfIP);
 		
 		JTextField jtfPORT = new JTextField();
 		jtfPORT.setBounds(120, 55, 120, 25);
-		jtfPORT.setFont(new Font("標楷體", Font.PLAIN, 20));
 		contentPane.add(jtfPORT);
 		
 		JButton jbtcon = new JButton("Connection");
