@@ -2,14 +2,14 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class Frame1 extends JFrame {
+public class ClientFrame extends JFrame {
 
 	Container contentPane;
 	int Width = 300;
 	int Height = 350;
 	
 	
-	Frame1 () {
+	ClientFrame () {
 		
 		Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 		this.setBounds((int)((screenSize.getWidth()-Width)*0.5), (int)((screenSize.getHeight()-Height)*0.5), Width, Height);
