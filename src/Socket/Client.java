@@ -1,3 +1,4 @@
+package Socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +7,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class Client extends Thread{
-    private static Socket skt;	// 客戶端連線Socket物件
+    public static Socket skt;	// 客戶端連線Socket物件
     private InetAddress host;	// 指定的伺服端IP
     private int port;			// 指定的伺服端連接埠
     private BufferedReader theInputStream;

@@ -1,3 +1,4 @@
+package Frame;
 import java.awt.*;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ Container contentPane;
 	int Width = 240;
 	int Height = 260;
 	
-	Layout3(){
+	public Layout3(){
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		contentPane = this.getContentPane();

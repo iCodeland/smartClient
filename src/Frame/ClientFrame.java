@@ -1,3 +1,4 @@
+package Frame;
 import java.awt.*;
 
 import javax.swing.*;
@@ -8,17 +9,15 @@ public class ClientFrame extends JFrame {
 	int Width = 300;
 	int Height = 350;
 	
-	ClientFrame () {
-		
+	public ClientFrame () {
 		Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-		this.setBounds((int)((screenSize.getWidth()-Width)*0.5), (int)((screenSize.getHeight()-Height)*0.5), Width, Height);
-				
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		this.setBounds((int)((screenSize.getWidth()-Width)*0.5), (int)((screenSize.getHeight()-Height)*0.5), Width, Height);	
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
-		contentPane = this.getContentPane();
+		this.setTitle("客戶端連線");
 		
-//		setBounds(400, 400, 300, 300);
 		setLayout(null);
+		contentPane = this.getContentPane();
 		
 		JLabel jplIP = new JLabel("IP  :");
 		jplIP.setBounds(65, 15, 100, 23);
@@ -30,11 +29,11 @@ public class ClientFrame extends JFrame {
 		jplPORT.setFont(new Font("標楷體", Font.PLAIN, 20));
 		contentPane.add(jplPORT);
 				
-		JTextField jtfIP = new JTextField();
+		JTextField jtfIP = new JTextField("127.0.0.1");
 		jtfIP.setBounds(120, 15, 120, 25);
 		contentPane.add(jtfIP);
 		
-		JTextField jtfPORT = new JTextField();
+		JTextField jtfPORT = new JTextField("8765");
 		jtfPORT.setBounds(120, 55, 120, 25);
 		contentPane.add(jtfPORT);
 		
@@ -44,17 +43,11 @@ public class ClientFrame extends JFrame {
 		contentPane.add(jbtcon);
 		
 		JTextArea jta = new JTextArea();
-//		jta.setBounds(25, 90, 240, 150);
-//		contentPane.add(jta);
 		
 		JScrollPane jsp = new JScrollPane(jta);
 		jsp.setBounds(25, 90, 240, 150);
 		contentPane.add(jsp);
 		
-		setVisible(true);
-		
+		this.setVisible(true);
 	}
-	
-	
-
 }
