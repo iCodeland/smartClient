@@ -8,7 +8,6 @@ public class ClientFrame extends JFrame {
 	int Width = 300;
 	int Height = 350;
 	
-	
 	ClientFrame () {
 		
 		Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
